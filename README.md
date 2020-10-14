@@ -7,8 +7,6 @@ Gabriel Santos Ribeiro - 9771380
 
 Gabriel Ribeiro Evangelista -
 
-Nilo Conrado Messias Alves Cangerana - 9805362
-
 ## Relatório:
 1. Requisitos
 2. Descrição do Projeto
