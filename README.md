@@ -5,7 +5,7 @@ Repositório para o desenvolvimento do trabalho da disciplina SSC0219 - Introdu�
 
 Gabriel Santos Ribeiro - 9771380
 
-Gabriel Ribeiro Evangelista -
+Gabriel Ribeiro Evangelista - 9771334
 
 ## Relatório:
 1. Requisitos
