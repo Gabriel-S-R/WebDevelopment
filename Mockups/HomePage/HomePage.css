@@ -72,3 +72,8 @@
   border: 1px solid red;
   margin: 0 auto;
 }
+
+.forms {
+  display: flex;
+  flex-direction: column;
+}
