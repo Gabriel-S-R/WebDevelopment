@@ -11,18 +11,30 @@
         <a href="HomePage.html"><img class="logo" src="./Assets/logo-placeholder-300x210.jpg" alt="Logo placeholder"></a>
         <div class="search-bar-container">
           <label for="search-bar">Pesquisa</label>
-          <input type="text" id="searchBar" name="searchBar" placeholder="Algum item interessante"/>
+          <input type="text" id="search-bar" name="search-bar" placeholder="Algum item interessante"/>
           <button type="submit" name="button"><img class="lupa" src="./Assets/lupa.png" alt="Lupa"></button>
         </div>
         <a href="LoginPage.html" class="change-page">Entrar/Cadastrar</a>
       </div>
       <div class="cart">
-        <p class="cart-item">Meu carrinho:</p>
         <div class="cart-item-container">
-          <p class="cart-item"><strong>Descrição do produto</strong></p>
-          <p class="cart-item"><strong>Quantidade</strong></p>
-          <p class="cart-item"><strong>Preço</strong></p>
+          <ul>
+            <li><strong>Imagem do produto</strong></li>
+            <li><strong>Descrição do produto</strong></li>
+            <li><strong>Quantidade</strong></li>
+            <li><strong>Preço</strong></li>
+          </ul>
+          <ul>
+            <li><div class="placeholder-item"></div></li>
+            <li>Teste</li>
+            <li>
+              <label for="quantidade">Quantidade</label>
+              <input type="number" name="quantidade" id="quantidade" value="1">
+            </li>
+            <li>R$10,00</li>
+          </ul>
         </div>
+        <button type="button" name="finalizar" class="finalizar-button">Finalizar a compra</button>
       </div>
     </div>
   </body>
