@@ -99,6 +99,12 @@
   margin: 10px;
 }
 
+.placeholder-item img {
+  height: 60%;
+  width: auto;
+  margin-bottom: 10px;
+}
+
 .footer {
   display: flex;
   flex-direction: row;
