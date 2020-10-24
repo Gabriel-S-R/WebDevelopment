@@ -52,7 +52,7 @@ Your functionality: Create a functionality that is specific to your application.
    <br>
    <br>
 
-	<img src="https://github.com/Gabriel-S-R/WebDevelopment/blob/master/Mockups/Assets/cadastro.png?raw=true" alt="Cadastro" width="600" height="auto">
+    <img src="https://github.com/Gabriel-S-R/WebDevelopment/blob/master/Mockups/Assets/cadastro.png?raw=true" alt="Cadastro" width="600" height="auto">
 
 
 <h6 align="center">
