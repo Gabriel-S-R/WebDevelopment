@@ -7,7 +7,7 @@
    Repositório para o desenvolvimento do trabalho da disciplina SSC0219
 </h6>
 
-    ![Logo](./Mockups/Assets/logo.png?raw=true)
+![Logo](https://github.com/Gabriel-S-R/WebDevelopment/blob/master/Mockups/Assets/logo.png?raw=true)
 
 ### Membros:
 
