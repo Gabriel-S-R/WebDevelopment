@@ -17,7 +17,7 @@
 
 ### Diagrama de navegação
 
-<a href="https://github.com/Gabriel-S-R/WebDevelopment/blob/master/Mockups/Assets/diagrama.png?raw=true">Diagrama de navegação</a>
+<a href="https://github.com/Gabriel-S-R/WebDevelopment/blob/master/Mockups/Assets/Diagrama.png?raw=true">Diagrama de navegação</a>
 
 ### Relatório
 
