@@ -7,7 +7,7 @@
    Repositório para o desenvolvimento do trabalho da disciplina SSC0219
 </h6>
 
-![Logo](https://github.com/Gabriel-S-R/WebDevelopment/blob/master/Mockups/Assets/logo.png?raw=true)
+<img src="https://github.com/Gabriel-S-R/WebDevelopment/blob/master/Mockups/Assets/logo.png?raw=true" alt="Logo" width=300 >
 
 ### Membros:
 
@@ -47,16 +47,12 @@ Your functionality: Create a functionality that is specific to your application.
      A produtos serão mostrados de acordo com os critérios de buscas determinado pelo cliente, buscando ao máximo apróximar o resultados com o objetivo de busca do cliente, como exemplo: buscar pelo celulares mais baratos, buscar pelos notebooks mais novos, buscar pelos ar-condicionados mais relevantes, etc.
      É possível ver abaixo detelhes das telas iniciais do site. Ainda não representam a arquitetura final do projeto, mais já possuem muitas das características visuais como cores, posicionamentos, itens vendidos pelo e-commerce, modelos de login e cadastro, etc.
 
-   <a href="" align:"center">
     <img src="https://github.com/Gabriel-S-R/WebDevelopment/blob/master/Mockups/Assets/home.png" alt="Logo" width="600" height="600" align: "center">
-   </a>
 
    <br>
    <br>
 
-   <a href="" align:"center">
     <img src="https://github.com/Gabriel-S-R/WebDevelopment/blob/master/Mockups/Assets/cadastro.png" alt="Logo" width="600" height="600">
-   </a>
   </p>
 
 <h6 align="center">
