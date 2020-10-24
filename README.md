@@ -43,15 +43,12 @@ Your functionality: Create a functionality that is specific to your application.
   Descrição do Projeto
 </h6>
   <p>
-    Nos projetos propostos em aula, optamos por desenvolver um site e-commerce, uma loja de varejo especializada nas vendas de produtos eletrônicos e eletrodomésticos em gerais, chamado BES (Best Eletronics Store). Adotamos como objetivo a criação de uma loja de varejo que seja especialista na venda de produtos eletrônicos, de forma fácil e prática, agilizando o processo de obtenção e pagamentos dos produtos ofertados, sempre visualizando e aproximando os critérios desejados para o projeto com os requisitos necessários que devem conter na implementação.
-     A produtos serão mostrados de acordo com os critérios de buscas determinado pelo cliente, buscando ao máximo apróximar o resultados com o objetivo de busca do cliente, como exemplo: buscar pelo celulares mais baratos, buscar pelos notebooks mais novos, buscar pelos ar-condicionados mais relevantes, etc.
-     É possível ver abaixo detelhes das telas iniciais do site. Ainda não representam a arquitetura final do projeto, mais já possuem muitas das características visuais como cores, posicionamentos, itens vendidos pelo e-commerce, modelos de login e cadastro, etc.
+    &emsp;Nos projetos propostos em aula, optamos por desenvolver um site e-commerce, uma loja de varejo especializada nas vendas de produtos eletrônicos e eletrodomésticos em gerais, chamado BES (Best Eletronics Store). Adotamos como objetivo a criação de uma loja de varejo que seja especialista na venda de produtos eletrônicos, de forma fácil e prática, agilizando o processo de obtenção e pagamentos dos produtos ofertados, sempre visualizando e aproximando os critérios desejados para o projeto com os requisitos necessários que devem conter na implementação.<br>
+    &emsp;Os produtos serão mostrados de acordo com os critérios de buscas determinado pelo cliente, buscando ao máximo apróximar o resultados com o objetivo de busca do cliente, como exemplo: buscar pelo celulares mais baratos, buscar pelos notebooks mais novos, buscar pelos ar-condicionados mais relevantes, etc.<br>
+    &emsp;É possível ver abaixo detelhes das telas iniciais do site. Ainda não representam a arquitetura final do projeto, mais já possuem muitas das características visuais como cores, posicionamentos, itens vendidos pelo e-commerce, modelos de login e cadastro, etc.<br>
+    &emsp;Serão armazenados na base de dados os cadastros dos usuários, tanto clientes quanto administradores, os produtos com suas devidas características, como preço, estoque e descrição e, um histórico dos itens adquiridos por determinado cliente além de itens visitados no passado.
   </p>
     <img src="https://github.com/Gabriel-S-R/WebDevelopment/blob/master/Mockups/Assets/home.png?raw=true" alt="Home Page" width="600" height="auto">
-
-   <br>
-   <br>
-
     <img src="https://github.com/Gabriel-S-R/WebDevelopment/blob/master/Mockups/Assets/cadastro.png?raw=true" alt="Cadastro" width="600" height="auto">
 
 
