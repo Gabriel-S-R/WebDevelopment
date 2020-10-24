@@ -14,13 +14,11 @@
 [Gabriel Ribeiro Evangelista](https://github.com/Bielevan)
 
 
-<h3 align="center">
-  Relatório
-</h3>
+### Relatório
 
-<h6 align="center">
+<h5 align="center">
   Requisitos do sistema
-</h6>
+</h5>
 <ul>
    <li>
     The system must have 2 types of users: Clients and Administrators:
@@ -41,6 +39,15 @@ Your functionality: Create a functionality that is specific to your application.
 
 <h6 align="center">
   Descrição do Projeto
+  <p>
+    Nos projetos propostos em aula, optamos por desenvolver um site e-commerce, uma loja de varejo especializada nas vendas de produtos eletrônicos e eletrodomésticos em gerais, chamado .... . Adotamos como objetivo a criação de uma loja de varejo que seja especialista na venda de produtos eletrônicos, de forma fácil e prática, agilizando o processo de obtenção e pagamentos dos produtos ofertados, sempre visualizando e aproximando os critérios desejados para o projeto com os requisitos necessários que devem conter na implementação.
+     A produtos serão mostrados de acordo com os critérios de buscas determinado pelo cliente, buscando ao máximo apróximar o resultados com o objetivo de busca do cliente, como exemplo: buscar pelo celulares mais baratos, buscar pelos notebooks mais novos, buscar pelos ar-condicionados mais relevantes, etc.
+     É possível ver abaixo detelhes das telas iniciais do site. Ainda não representam a arquitetura final do projeto, mais já possuem muitas das características visuais como cores, posicionamentos, itens vendidos pelo e-commerce, modelos de login e cadastro, etc. 
+  
+   <a href="https://raw.githubusercontent.com/Brunohelou/scc-0219-devweb-glassesStore/master/pages/images/logo_size.jpg">
+    <img src="https://raw.githubusercontent.com/Brunohelou/scc-0219-devweb-glassesStore/master/pages/images/logo_size.jpg" alt="Logo" width="300" height="300">
+  </a>
+  </p>
 </h6>
 
 <h6 align="center">
@@ -66,12 +73,3 @@ Your functionality: Create a functionality that is specific to your application.
 <h6 align="center">
   Comentários
 </h6>
-
-<!--
-Disponível no [Figma](https://www.figma.com/file/90M9GNbrUwnLGpIPAdX5Nn/Glasses-Store?node-id=0%3A1)
-Mas também em [pdf](mockup_telas/Loja_Oculos017.pdf)
-## Diagrama do Projeto
-Disponível no [Miro](https://miro.com/welcomeonboard/xw6MOhSIZFKC840hfqLhsjpporNo4MoD8CBYwSJWc3FkZGGucrW8RAW1t1NuX386)
-### Exemplo tela
-![Tela Principal](https://raw.githubusercontent.com/Brunohelou/scc-0219-devweb-glassesStore/master/mockup_telas/Imagens_telas/Tela%20Principal%20(versao%202).png)
--->
