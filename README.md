@@ -15,6 +15,9 @@
 <br>
 [Gabriel Ribeiro Evangelista](https://github.com/Bielevan) - 9771334
 
+### Diagrama de navegação
+
+<a href="https://github.com/Gabriel-S-R/WebDevelopment/blob/master/Mockups/Assets/diagrama.png?raw=true">Diagrama de navegação</a>
 
 ### Relatório
 
