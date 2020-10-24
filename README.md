@@ -7,6 +7,10 @@
    Repositório para o desenvolvimento do trabalho da disciplina SSC0219
 </h6>
 
+<a href="" align:"center">
+    <img src="https://github.com/Gabriel-S-R/WebDevelopment/blob/master/Mockups/Assets/logo.png" alt="Logo" width="200" height="200">
+ </a>
+
 ### Membros:
 
 [Gabriel Santos Ribeiro](https://github.com/Gabriel-S-R)
@@ -39,13 +43,14 @@ Your functionality: Create a functionality that is specific to your application.
 
 <h6 align="center">
   Descrição do Projeto
+</h6>
   <p>
-    Nos projetos propostos em aula, optamos por desenvolver um site e-commerce, uma loja de varejo especializada nas vendas de produtos eletrônicos e eletrodomésticos em gerais, chamado .... . Adotamos como objetivo a criação de uma loja de varejo que seja especialista na venda de produtos eletrônicos, de forma fácil e prática, agilizando o processo de obtenção e pagamentos dos produtos ofertados, sempre visualizando e aproximando os critérios desejados para o projeto com os requisitos necessários que devem conter na implementação.
+    Nos projetos propostos em aula, optamos por desenvolver um site e-commerce, uma loja de varejo especializada nas vendas de produtos eletrônicos e eletrodomésticos em gerais, chamado BES (Best Eletronics Store). Adotamos como objetivo a criação de uma loja de varejo que seja especialista na venda de produtos eletrônicos, de forma fácil e prática, agilizando o processo de obtenção e pagamentos dos produtos ofertados, sempre visualizando e aproximando os critérios desejados para o projeto com os requisitos necessários que devem conter na implementação.
      A produtos serão mostrados de acordo com os critérios de buscas determinado pelo cliente, buscando ao máximo apróximar o resultados com o objetivo de busca do cliente, como exemplo: buscar pelo celulares mais baratos, buscar pelos notebooks mais novos, buscar pelos ar-condicionados mais relevantes, etc.
      É possível ver abaixo detelhes das telas iniciais do site. Ainda não representam a arquitetura final do projeto, mais já possuem muitas das características visuais como cores, posicionamentos, itens vendidos pelo e-commerce, modelos de login e cadastro, etc. 
   
    <a href="" align:"center">
-    <img src="https://github.com/Gabriel-S-R/WebDevelopment/blob/master/Mockups/Assets/home.png" alt="Logo" width="600" height="600">
+    <img src="https://github.com/Gabriel-S-R/WebDevelopment/blob/master/Mockups/Assets/home.png" alt="Logo" width="600" height="600" align: "center">
    </a>
    
    <br>
@@ -55,7 +60,6 @@ Your functionality: Create a functionality that is specific to your application.
     <img src="https://github.com/Gabriel-S-R/WebDevelopment/blob/master/Mockups/Assets/cadastro.png" alt="Logo" width="600" height="600">
    </a>
   </p>
-</h6>
 
 <h6 align="center">
   Comentários sobre o código
