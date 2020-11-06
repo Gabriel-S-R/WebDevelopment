@@ -115,6 +115,13 @@
         >
       </li>
     </ul>
+    <input type="number" placeholder="Valor" v-model="valor" />
+    <br />
+    <button @click="increment">
+      <strong>{{ contador }}</strong>
+    </button>
+    <p>{{ valor }}</p>
+    <p v-if="clicked10Times">Você clicou no botão {{ valor }} vezes</p>
   </div>
 </template>
 
@@ -125,6 +132,25 @@ export default defineComponent({
   name: "HelloWorld",
   props: {
     msg: String
+  },
+  data() {
+    return { valor: 0 };
+  },
+  methods: {
+    increment() {
+      this.valor++;
+    },
+    decrement() {
+      this.valor--;
+    }
+  },
+  computed: {
+    clicked10Times(): boolean {
+      return this.valor >= 10 ? true : false;
+    },
+    contador(): string {
+      return this.valor < 10 ? "Somar" : "Subtrair";
+    }
   }
 });
 </script>
@@ -144,5 +170,18 @@ li {
 }
 a {
   color: #42b983;
+}
+button {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  font-size: 18px;
+}
+button:hover {
+  background-color: #82f7c2;
+}
+button:active {
+  background-color: #42b983;
 }
 </style>
