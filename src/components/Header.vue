@@ -6,7 +6,7 @@
     <form action="">
       <label for="search-bar">Pesquisa</label>
       <input
-        type="text"
+        type="search"
         id="search-bar"
         name="search-bar"
         placeholder="Algum item interessante"
@@ -18,13 +18,15 @@
   </div>
 </template>
 
-<style scoped>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+<script lang="ts">
+import { defineComponent } from "vue";
 
+export default defineComponent({
+  name: "Header"
+});
+</script>
+
+<style scoped>
 .header {
   display: flex;
   flex-direction: row;
@@ -48,6 +50,7 @@ input {
   height: 37px;
   width: 500px;
   padding-left: 10px;
+  background-color: #ffffff;
 }
 
 .lupa {
