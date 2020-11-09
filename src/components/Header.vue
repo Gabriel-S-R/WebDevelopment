@@ -15,6 +15,12 @@
         <img src="../assets/lupa.png" alt="Lupa" class="lupa" />
       </button>
     </form>
+    <router-link v-if="!isLoggedIn" class="header-router" to="/login"
+      >Entrar/Cadastrar-se</router-link
+    >
+    <router-link v-if="isLoggedIn" class="header-router" to="/profile"
+      >Perfil</router-link
+    >
   </div>
 </template>
 
@@ -22,7 +28,12 @@
 import { defineComponent } from "vue";
 
 export default defineComponent({
-  name: "Header"
+  name: "Header",
+  computed: {
+    isLoggedIn() {
+      return this.$store.state.user.name;
+    }
+  }
 });
 </script>
 
@@ -60,5 +71,19 @@ input {
 
 label {
   display: none;
+}
+
+.header-router {
+  color: #ffffff;
+  background-color: inherit;
+  text-decoration: none;
+}
+
+.header-router:hover {
+  background-color: #e42525;
+}
+
+.header-router:active {
+  background-color: #cb2121;
 }
 </style>

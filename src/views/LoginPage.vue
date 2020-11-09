@@ -1,15 +1,69 @@
 <template>
   <div class="container">
-    <form action="">
+    <form @submit.prevent="handleSubmit">
+      <p>{{ error }}</p>
       <label for="email">E-mail:</label>
-      <input type="email" name="email" id="email" placeholder="E-mail" />
+      <input
+        v-model="formEmail"
+        type="email"
+        name="email"
+        id="email"
+        placeholder="E-mail"
+      />
       <label for="senha">Senha:</label>
-      <input type="password" name="senha" id="senha" placeholder="Senha" />
+      <input
+        v-model="formPassword"
+        type="password"
+        name="senha"
+        id="senha"
+        placeholder="Senha"
+      />
       <button type="submit">Entrar</button>
     </form>
     <router-link to="/signup">Não possui uma conta?</router-link>
   </div>
 </template>
+
+<script lang="ts">
+import { defineComponent } from "vue";
+import axios from "axios";
+
+export default defineComponent({
+  name: "Login Page",
+  data() {
+    return {
+      formEmail: "",
+      formPassword: "",
+      error: ""
+    };
+  },
+  methods: {
+    handleSubmit() {
+      axios
+        .get("http://localhost:3000/users", {
+          params: {
+            email: this.formEmail,
+            password: this.formPassword
+          }
+        })
+        .then(response => {
+          if (response.data.length === 0) {
+            this.error = "E-mail ou senha incorretos.";
+          } else {
+            this.$store.commit("signin", response.data[0]);
+            this.$router.push("/teste");
+          }
+        })
+        .catch(e => (this.error = e.message));
+    }
+  },
+  computed: {
+    teste() {
+      return this.$store.state.user.is_admin;
+    }
+  }
+});
+</script>
 
 <style scoped>
 form {
@@ -62,5 +116,11 @@ a {
 
 a:hover {
   color: #0000c4;
+}
+
+p {
+  margin-top: 20px;
+  font-size: 20px;
+  color: darkred;
 }
 </style>

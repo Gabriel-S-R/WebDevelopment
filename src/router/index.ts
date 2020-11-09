@@ -30,6 +30,16 @@ const routes: Array<RouteRecordRaw> = [
     path: "/signup",
     name: "Criar Conta",
     component: () => import("../views/CreateAccount.vue")
+  },
+  {
+    path: "/profile",
+    name: "Perfil",
+    component: () => import("../views/Profile.vue")
+  },
+  {
+    path: "/:pathMatch(.*)*",
+    name: "Not found",
+    component: () => import("../views/NotFound.vue")
   }
 ];
 
