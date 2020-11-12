@@ -21,6 +21,7 @@
     <router-link v-if="isLoggedIn" class="header-router" to="/profile"
       >Perfil</router-link
     >
+    <router-link class="header-router" to="/cart">Carrinho</router-link>
   </div>
 </template>
 

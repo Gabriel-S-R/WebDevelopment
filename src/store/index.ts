@@ -10,6 +10,25 @@ interface RootState {
     address: string | null;
     is_admin: boolean;
   }
+  produtos: {
+    id: number;
+    name: string;
+    description: string;
+    photo: string;
+    price: number;
+    stock: number;
+    sold: number;
+  }[]
+  carrinho: {
+    id: number;
+    name: string;
+    description: string;
+    photo: string;
+    price: number;
+    stock: number;
+    sold: number;
+    quantity: number;
+  }[]
 }
 
 export default createStore({
@@ -23,7 +42,9 @@ export default createStore({
         phone: null,
         address: null,
         is_admin: false
-      }
+      },
+      produtos: [],
+      carrinho: []
     }
   },
   mutations: {
@@ -44,6 +65,41 @@ export default createStore({
       state.user.phone = null
       state.user.address = null
       state.user.is_admin = false
+    },
+    pushProdutos(state, payload) {
+      for (var item of payload) {
+        item.price = item.price.toFixed(2)
+      }
+      state.produtos.push(...payload);  
+    },
+    clearProdutos(state) {
+      state.produtos = [];
+    },
+    addToCart(state, payload) {
+      for (var i = 0; i < state.carrinho.length; i++) {
+        if (state.carrinho[i].id === payload.id) {
+          return state.carrinho[i].quantity++;
+        }
+      }
+      payload.quantity = 1;
+      state.carrinho.push(payload);
+    },
+    updateQuantity(state, payload) {
+      for (var i = 0; i < state.carrinho.length; i++) {
+        if(state.carrinho[i].id === payload.id) {
+          state.carrinho[i].quantity = payload.value;
+          return
+        }
+      }
+    }
+  },
+  getters: {
+    cartTotalSum: state => {
+      var sum = 0;
+      for (var i = 0; i < state.carrinho.length; i++) {
+        sum += state.carrinho[i].price * state.carrinho[i].quantity;
+      }
+      return sum.toFixed(2);
     }
   },
   actions: {},
