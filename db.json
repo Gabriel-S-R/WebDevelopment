@@ -8929,6 +8929,151 @@
       "phone": "785-234-4485",
       "address": "0 Oriole Junction",
       "is_admin": false
+    },
+    {
+      "id": 1001,
+      "name": "admin",
+      "email": "admin@admin.com",
+      "password": "admin",
+      "is_admin": true
+    }
+  ],
+  "produtos": [
+    {
+      "id": 1,
+      "name": "Smart TV Android LED 32\"",
+      "description": "Descubra uma emocionante experiência e uma maneira inteligente de aproveitar sua TV.",
+      "photo": "tv.png",
+      "price": 1905.5,
+      "stock": 74,
+      "sold": 241,
+      "quantity": 1
+    },
+    {
+      "id": 2,
+      "name": "Smartphone Samsung Galaxy A01 - Azul",
+      "description": "Smartphone Samsung Galaxy A01, 32GB, 2GB RAM, Tela Infinita de 5.7.",
+      "photo": "samsungA01.png",
+      "price": 998.9,
+      "stock": 30,
+      "sold": 565
+    },
+    {
+      "id": 3,
+      "name": "Tablet Samsung Galaxy A 32GB Tela 8\"",
+      "description": "Tablet Samsung Galaxy A 32GB 4G Tela 8\" Android Quad-Core 2GHz 2GB RAM, Câmera 8MP AF + 2MP",
+      "photo": "samsungA.png",
+      "price": 849.8,
+      "stock": 25,
+      "sold": 73
+    },
+    {
+      "id": 4,
+      "name": "Smart TV LED 32\" Philco",
+      "description": "Televisor com tela de 32 polegadas em resolução HD.",
+      "photo": "tv_philco.png",
+      "price": 1149.9,
+      "stock": 66,
+      "sold": 31
+    },
+    {
+      "id": 5,
+      "name": "Notebook Lenovo Ideapad",
+      "description": "Notebook Lenovo Ultrafino ideapad",
+      "photo": "note_lenovo.png",
+      "price": 3149,
+      "stock": 60,
+      "sold": 862
+    },
+    {
+      "id": 6,
+      "name": "Notebook Dell Inspiron",
+      "description": "Com o Inspiron 15 3000, você terá uma nova perspectiva sobre como um notebook poderá te ajudar, seja no trabalho, estudo ou entretenimento.",
+      "photo": "note_dell.png",
+      "price": 3000,
+      "stock": 98,
+      "sold": 547
+    },
+    {
+      "id": 7,
+      "name": "Notebook Acer Aspire",
+      "description": "Notebook Acer Aspire 3 Intel Celeron N4000. Tela de 15.6 Polegadas com resolução HD.",
+      "photo": "note_acer.png",
+      "price": 4500,
+      "stock": 23,
+      "sold": 167
+    },
+    {
+      "id": 8,
+      "name": "Micro-Ondas Consul",
+      "description": "Micro-Ondas Consul",
+      "photo": "microondas_consul.png",
+      "price": 469.9,
+      "stock": 45,
+      "sold": 1054
+    },
+    {
+      "id": 9,
+      "name": "Micro-Ondas Brastemp",
+      "description": "Micro-Ondas Brastemp",
+      "photo": "microondas_brastemp.png",
+      "price": 649.9,
+      "stock": 67,
+      "sold": 732
+    },
+    {
+      "id": 10,
+      "name": "Ar condicionado split Consul",
+      "description": "O ar split Consul é compacto e tem potência para climatizar sua casa com rapidez e economia.",
+      "photo": "ar_split_consul.png",
+      "price": 2000,
+      "stock": 110,
+      "sold": 65
+    },
+    {
+      "id": 11,
+      "name": "Ar condicionado split LG",
+      "description": "Ar Condicionado Split Dual Inverter LG, a LG continua inovando!",
+      "photo": "ar_split_lg.png",
+      "price": 2200,
+      "stock": 87,
+      "sold": 51
+    },
+    {
+      "id": 12,
+      "name": "Ar condicionado split Philco",
+      "description": "Com o Ar-condicionado Philco você conta com um aparelho focado em proporcionar as melhores soluções para o seu dia a dia.",
+      "photo": "ar_split_philco.png",
+      "price": 1900,
+      "stock": 91,
+      "sold": 69
+    },
+    {
+      "id": 13,
+      "name": "Lavadora de Roupas Brastemp",
+      "description": "A lavadora Brastemp 9Kg combina cuidado e performance para as roupas.",
+      "photo": "lavadora_brastemp.png",
+      "price": 1549.9,
+      "stock": 63,
+      "sold": 188
+    },
+    {
+      "id": 14,
+      "name": "Lavadora de Roupas Electrolux",
+      "description": "Com capacidade de 14 kg, a lavadora LPR14 Electrolux possui um dispenser autolimpante e tecnologia Jet&Clean, que dilui até 100% do sabão e amaciante, evitando manchas e relavagem.",
+      "photo": "lavadora_electro.png",
+      "price": 1649.9,
+      "stock": 88,
+      "sold": 131
+    },
+    {
+      "id": 15,
+      "name": "Lavadora de Roupas Consul",
+      "description": "Lave mais gastando menos! Com a Lavadora de Roupas da Consul de 9kg, você economiza tempo e ainda evita o desperdício, com o sistema Dosagem Extra Fácil, você economiza até 70% de sabão em pó e garante que as suas roupas fiquem bem lavadas, até mesmo tecidos mais pesados como cobertores e edredons.",
+      "photo": "lavadora.png",
+      "price": 1349.9,
+      "stock": 12,
+      "sold": 15
     }
   ]
 }

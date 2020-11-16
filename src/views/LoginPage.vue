@@ -24,7 +24,7 @@
   </div>
 </template>
 
-<script lang="ts">
+<script>
 import { defineComponent } from "vue";
 import axios from "axios";
 
@@ -51,7 +51,8 @@ export default defineComponent({
             this.error = "E-mail ou senha incorretos.";
           } else {
             this.$store.commit("signin", response.data[0]);
-            this.$router.push("/teste");
+            const redirect = this.$route.query.redirect;
+            this.$router.push(redirect || "/");
           }
         })
         .catch(e => (this.error = e.message));

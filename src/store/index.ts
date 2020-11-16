@@ -28,6 +28,7 @@ interface RootState {
     stock: number;
     sold: number;
     quantity: number;
+    error?: string;
   }[]
 }
 
@@ -84,9 +85,24 @@ export default createStore({
       payload.quantity = 1;
       state.carrinho.push(payload);
     },
+    emptyCart(state) {
+      state.carrinho = [];
+    },
+    removeItemFromCart(state, id) {
+      for (var i = 0; i < state.carrinho.length; i++) {
+        if (state.carrinho[i].id 
+          === id) {
+          return state.carrinho.splice(i, 1);
+        }
+      }
+    },
     updateQuantity(state, payload) {
       for (var i = 0; i < state.carrinho.length; i++) {
-        if(state.carrinho[i].id === payload.id) {
+        if (state.carrinho[i].id === payload.id) {
+          state.carrinho[i].error = "";
+          if (payload.value > state.carrinho[i].stock) {
+            state.carrinho[i].error = "Quantidade excede o estoque";
+          }
           state.carrinho[i].quantity = payload.value;
           return
         }
@@ -100,6 +116,12 @@ export default createStore({
         sum += state.carrinho[i].price * state.carrinho[i].quantity;
       }
       return sum.toFixed(2);
+    },
+    cartHasErrors: state => {
+      for (var item of state.carrinho) {
+        if (item.error) return true;
+      return false;
+      }
     }
   },
   actions: {},

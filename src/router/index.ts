@@ -47,6 +47,23 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import("../views/Cart.vue")
   },
   {
+    path: "/createProduct",
+    name: "Adicionar Produto",
+    component: () => import("../views/CreateProduct.vue")
+  },
+  {
+    path: "/payment",
+    name: "Pagamento",
+    component: () => import("../views/Payment.vue"),
+    meta: { requiresAuth: true }
+  },
+  {
+    path: "/checkout",
+    name: "Finalizar Compra",
+    component: () => import("../views/Checkout.vue"),
+    meta: { requiresAuth: true }
+  },
+  {
     path: "/:pathMatch(.*)*",
     name: "Not found",
     component: () => import("../views/NotFound.vue")
@@ -72,7 +89,7 @@ router.beforeEach((to, from, next) => {
   }
   else if (to.meta.requiresAuth) {
     if (!store.state.user.name) {
-      next({ name: "Login" });
+      next({ name: "Login", query: { redirect: to.fullPath } });
     }
     else {
       next();

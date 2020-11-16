@@ -3,7 +3,7 @@
     <router-link to="/"
       ><img src="../assets/logo.png" alt="Logo" class="logo"
     /></router-link>
-    <form action="">
+    <form @submit.prevent="">
       <label for="search-bar">Pesquisa</label>
       <input
         type="search"
