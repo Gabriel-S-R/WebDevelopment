@@ -7,17 +7,11 @@
    Repositório para o desenvolvimento do trabalho da disciplina SSC0219
 </h6>
 
-<img src="https://github.com/Gabriel-S-R/WebDevelopment/blob/master/Mockups/Assets/logo.png?raw=true" alt="Logo" width=300 >
-
 ### Membros:
 
 [Gabriel Santos Ribeiro](https://github.com/Gabriel-S-R) - 9771380
 <br>
 [Gabriel Ribeiro Evangelista](https://github.com/Bielevan) - 9771334
-
-### Diagrama de navegação
-
-<a href="https://github.com/Gabriel-S-R/WebDevelopment/blob/master/Mockups/Assets/Diagrama.png?raw=true">Diagrama de navegação</a>
 
 ### Relatório
 
@@ -51,13 +45,12 @@ Your functionality: Create a functionality that is specific to your application.
     &emsp;É possível ver abaixo detelhes das telas iniciais do site. Ainda não representam a arquitetura final do projeto, mais já possuem muitas das características visuais como cores, posicionamentos, itens vendidos pelo e-commerce, modelos de login e cadastro, etc.<br>
     &emsp;Serão armazenados na base de dados os cadastros dos usuários, tanto clientes quanto administradores, os produtos com suas devidas características, como preço, estoque e descrição e, um histórico dos itens adquiridos por determinado cliente além de itens visitados no passado.
   </p>
-    <img src="https://github.com/Gabriel-S-R/WebDevelopment/blob/master/Mockups/Assets/home.png?raw=true" alt="Home Page" width="600" height="auto">
-    <img src="https://github.com/Gabriel-S-R/WebDevelopment/blob/master/Mockups/Assets/cadastro.png?raw=true" alt="Cadastro" width="600" height="auto">
-
 
 <h6 align="center">
   Comentários sobre o código
 </h6>
+
+<p>&emsp;Algumas partes do códgo foram comentadas mas a maior parte será comentada para a entrega final, estando ainda sem comentários.</p>
 
 <h6 align="center">
   Plano de testes
@@ -71,6 +64,21 @@ Your functionality: Create a functionality that is specific to your application.
   Instruções de compilação
 </h6>
 
+<p>&emsp;Foi utilizado da biblioteca <strong>json-server</strong> para a criação de uma <em>Fake API</em> com o arquivo <em>db.json</em> que contém os dados da nossa API.</p>
+<p>&emsp;Para executar o servidor do json-server executamos na raiz do projeto:</p>
+
+```
+npx json-server --watch db.json
+```
+
+<p>&emsp;Com isso temos nossa Fake API rodando na porta 3000 (porta padrão) do json-server</p
+<p>&emsp;Após isso podemos executar a página em um servidor HTTP, a página já possui uma versão de produção pronta no diretório dist então para abrirmos executamos na raiz do projeto:</p>
+
+```
+npx serve -s dist
+```
+
+<p>Com isso o servidor HTTP estará aberto, a porta será especificada no terminal mas também pode ser especificada pelo usuário através do argumento -p, basta então abrir a página com localhost:porta em qualquer navegador.</p>
 <h6 align="center">
   Problemas
 </h6>
