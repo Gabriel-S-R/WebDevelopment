@@ -103,7 +103,7 @@ export default defineComponent({
     },
     finishEditItem() {
       axios
-        .patch(`http://localhost:3000/produtos/${this.edit.id}`, {
+        .patch(`http://localhost:3000/produto/${this.edit.id}`, {
           name: this.edit.name,
           description: this.edit.description,
           price: parseFloat(this.edit.price),

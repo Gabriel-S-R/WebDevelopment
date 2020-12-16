@@ -35,16 +35,16 @@ export default defineComponent({
     checkout() {
       for (const item of this.$store.state.carrinho) {
         axios
-          .get(`http://localhost:3000/produtos/${item.id}`)
-          .then(response =>
+          .get(`http://localhost:3000/produto/${item.id}`)
+          .then(response => {
             axios
-              .patch(`http://localhost:3000/produtos/${item.id}`, {
+              .patch(`http://localhost:3000/sellProduto/${item.id}`, {
                 sold: response.data.sold + item.quantity,
                 stock: response.data.stock - item.quantity
               })
               .then(response => console.log(response))
-              .catch(e => console.log(e))
-          )
+              .catch(e => console.log(e));
+          })
           .catch(e => console.log(e));
       }
       this.$router.push("/");
