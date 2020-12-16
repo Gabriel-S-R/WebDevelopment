@@ -154,7 +154,7 @@ export default defineComponent({
       }
 
       axios
-        .post("http://localhost:3000/users", this.user)
+        .post("http://localhost:3000/signUp", { user: this.user })
         .then(() => this.$router.push("/login"))
         .catch(e => this.errors.push(e.message));
     }

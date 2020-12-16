@@ -40,22 +40,16 @@ export default defineComponent({
   methods: {
     handleSubmit() {
       axios
-        .get("http://localhost:3000/users", {
-          params: {
-            email: this.formEmail,
-            password: this.formPassword
-          }
+        .post("http://localhost:3000/user", {
+          email: this.formEmail,
+          password: this.formPassword
         })
         .then(response => {
-          if (response.data.length === 0) {
-            this.error = "E-mail ou senha incorretos.";
-          } else {
-            this.$store.commit("signin", response.data[0]);
-            const redirect = this.$route.query.redirect;
-            this.$router.push(redirect || "/");
-          }
+          this.$store.commit("signin", response.data);
+          const redirect = this.$route.query.redirect;
+          this.$router.push(redirect || "/");
         })
-        .catch(e => (this.error = e.message));
+        .catch(() => (this.error = "E-mail ou senha incorretos."));
     }
   },
   computed: {
